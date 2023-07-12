@@ -1,0 +1,8 @@
+<fieldset class="form-list">
+    <?php $_code = $this->getMethodCode() ?>
+    <ul id="payment_form_<?php echo $_code ?>" style="display:none">
+        <li>
+            <?php echo Mage::helper('standardtelrpayments')->__('You will be redirected to Telr Hosted payment, please keep your Debit / Credit Card Ready.') ?><br/>    
+        </li>
+    </ul>
+</fieldset>

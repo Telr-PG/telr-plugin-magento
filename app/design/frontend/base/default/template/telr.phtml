@@ -1,0 +1,18 @@
+<?php
+
+$html = '';
+$iFrameUrl = Mage::getSingleton('checkout/session')->getTelrPaymentUrl();
+
+if($iFrameUrl && $iFrameUrl != ''){
+	$html = "<iframe id= 'telr' src= '" . $iFrameUrl . "' style='width: 100%; height:450px; border: none;'></iframe>";
+}else{
+	$html = 'Sorry, unable to process your transaction at this time. Please try again.';
+}
+echo $html;
+?>
+
+<style type="text/css">
+	.col-main{
+		width: 100% !important;
+	}
+</style>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Telr_StandardTelrpayments>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Telr_StandardTelrpayments>
+    </modules>
+</config> 

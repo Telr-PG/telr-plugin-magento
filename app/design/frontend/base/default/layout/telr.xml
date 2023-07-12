@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <standardtelrpayments_standard_process>
+        <reference name="content">
+            <block type="core/template" name="telrprocess" template="telr.phtml" />
+        </reference>
+    </standardtelrpayments_standard_process>
+</layout>

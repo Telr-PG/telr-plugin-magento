@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+   <sections>
+      <payment>
+         <groups>
+            <standardtelrpayments translate="label">
+               <label>Telr Hosted Payment Gateway Solutions</label>
+               <frontend_type>text</frontend_type>
+               <sort_order>1000</sort_order>
+               <show_in_default>1</show_in_default>
+               <show_in_website>1</show_in_website>
+               <show_in_store>1</show_in_store>
+               <fields>
+                  <active translate="label">
+                     <label>Enabled</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_yesno</source_model>
+                     <sort_order>1</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>0</show_in_store>
+                  </active>
+                  <title translate="label">
+                     <label>Title</label>
+                     <frontend_type>text</frontend_type>
+                     <sort_order>2</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                  </title>
+                  <store_id translate="label">
+                     <label>Store ID</label>
+                     <frontend_type>text</frontend_type>
+                     <sort_order>3</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                     <validate />
+                  </store_id>
+                  <testmode translate="label">
+                     <label>Test Mode</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>adminhtml/system_config_source_yesno</source_model>
+                     <sort_order>4</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>0</show_in_store>
+                  </testmode>
+                  <authentication_key translate="label">
+                     <label>Authentication Key</label>
+                     <frontend_type>text</frontend_type>
+                     <sort_order>5</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                     <validate />
+                  </authentication_key>
+                    <transaction_desc translate="label">
+                     <label>Transaction Desc</label>
+                     <frontend_type>text</frontend_type>
+                     <sort_order>6</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>1</show_in_store>
+                     <validate />
+                  </transaction_desc>
+                  <order_status translate="label">
+                     <label>New Order Status</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>standardtelrpayments/system_order_status</source_model>
+                     <sort_order>7</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>0</show_in_store>
+                  </order_status>
+                    <payment_method translate="label">
+                     <label>Payment Method</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>standardtelrpayments/system_config_PaymentMode</source_model>
+                     <sort_order>8</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>0</show_in_store>
+                  </payment_method>
+                  <paymentpage_language translate="label">
+                     <label>Language</label>
+                     <frontend_type>select</frontend_type>
+                     <source_model>standardtelrpayments/system_config_Language</source_model>
+                     <sort_order>9</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>0</show_in_store>
+                  </paymentpage_language>   
+                   <allowspecific translate="label">
+                            <label>Payment from Applicable Countries</label>
+                            <frontend_type>allowspecific</frontend_type>
+                            <sort_order>76</sort_order>
+                            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </allowspecific>
+                        <specificcountry translate="label">
+                            <label>Payment from Specific Countries</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <sort_order>77</sort_order>
+                            <source_model>adminhtml/system_config_source_country</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                  </specificcountry>
+                  <min_order_total translate="label">
+                            <label>Minimum Order Total</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </min_order_total>
+                        <max_order_total translate="label">
+                            <label>Maximum Order Total</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                 </max_order_total>
+                  <sort_order translate="label">
+                     <label>Sort Order</label>
+                     <frontend_type>text</frontend_type>
+                     <sort_order>8</sort_order>
+                     <show_in_default>1</show_in_default>
+                     <show_in_website>1</show_in_website>
+                     <show_in_store>0</show_in_store>
+                  </sort_order>
+               </fields>
+            </standardtelrpayments>
+         </groups>
+      </payment>
+   </sections>
+</config>
