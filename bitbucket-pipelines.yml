@@ -8,5 +8,5 @@ pipelines:
           script:         
             - git config --global user.email ${GITHUB_EMAIL}
             - git config --global user.name ${GITHUB_USER}
-            - git remote add github https://github.com/Telr-PG/{BITBUCKET_REPO_FULL_NAME}
-            - git push -f https://${GITHUB_USERNAME}:${GITHUB_PASSWORD}@github.com/Telr-PG/{BITBUCKET_REPO_FULL_NAME} HEAD:refs/heads/main
+            - git remote add github https://github.com/Telr-PG/{BITBUCKET_CLONE_DIR}
+            - git push -f https://${GITHUB_USERNAME}:${GITHUB_PASSWORD}@github.com/Telr-PG/{BITBUCKET_CLONE_DIR} HEAD:refs/heads/main
