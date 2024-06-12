@@ -12,6 +12,6 @@ This plugin enables your Magento powered platform to start accepting payments.
 
 * Magento 1.9.x Stable
 
-## License
+### License ###
 
 This repository is available under the [MIT license](LICENSE).
